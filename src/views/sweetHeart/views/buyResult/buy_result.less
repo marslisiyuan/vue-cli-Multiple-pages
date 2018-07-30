@@ -1,0 +1,153 @@
+.container {
+    overflow:hidden;
+    position: relative;
+    background-color: #f5b0c5;
+    z-index: 1;
+    .content-top {
+        width: 100%;
+        background: url(~assets/images/result_bg2_top.png) no-repeat;
+        background-size: 100%;
+        padding-top: 1.3rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        img {
+            width: 95%;
+            display: block;
+            margin: 0 auto;
+        }
+        .username {
+            color: #ff5181;
+            text-align:center;
+            margin-top:-0.7rem;
+            font-size: .45rem;
+            @media screen and (min-width: 640px) {
+                margin-top:-1.8rem;
+            }
+        }
+    }
+    .zhe{
+        width: 100%;
+        height: 0.3rem;
+        position: absolute;
+        top: 5.3rem;
+        left: 0rem;
+        z-index: 99;
+    }
+    .content-middle {
+        background: url(~assets/images/result_bg2_01_02.jpg);
+        background-size: contain;
+        overflow: auto;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0rem;
+        //display: none;
+        //.content-button{
+        //  background: #479ad0;
+        //  color: #000;
+        //  width: 6rem;
+        //  height: 1rem;
+        //  border-radius: 1rem;
+        //  margin: 0 auto;
+        //  margin-top: 1rem;
+        //  line-height: 1rem;
+        //  text-align: center;
+        //
+        //}
+        //.content-case {
+        //    width: 95%;
+        //    margin: 0 auto;
+        //    background: url(../../assets/images/content_middle2.png);
+        //    background-size:contain;
+        //    .result-conent {
+        //        padding: 1rem 5% 0 6%;
+        .button{
+            width: 80%;
+            height: 1.3rem;
+            margin: 0 auto;
+            display: block;
+            font-size: .55rem;
+            color:white;
+            line-height:1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+        .saomiao{
+            width: 60%;
+            //height: 1rem;
+            text-align: center;
+            //line-height: 1rem;
+            font-size: .5rem;
+            margin-top: 1rem;
+            margin-bottom: .5rem;
+            color: #fa4b7c;
+        }
+        .saomiao1{
+            width: 60%;
+            //height: 1rem;
+            text-align: center;
+            //line-height: 1rem;
+            font-size: .5rem;
+            margin-bottom: 1.5rem;
+            color: #fa4b7c;
+        }
+        .erweima{
+            width:30%;
+            height:3rem;
+            display: inline-block;
+            position: absolute;
+            bottom: 10rem;
+            right: 1rem;
+        }
+        .result-item {
+            padding-bottom: 1.5rem;
+            .result-title {
+                color: #f2180f;
+                font-size: .55rem;
+                margin-bottom: .4rem;
+            }
+            .result-text {
+                color: #f43830;
+                font-size: .44rem;
+                line-height: .8rem;
+                font-family: 'KaiTi';
+                @media screen and (min-width: 640px) {
+                    font-size: .55rem;
+                    line-height: 1rem;
+                }
+            }
+        }
+        //}
+        .extra{
+            color:#f43830;
+            text-align:center;
+            line-height:.5rem;
+        }
+        //}
+    }
+    .cover-img{
+        display:inline-block;
+        width: 100%;
+        position: absolute;
+        top: 5.5rem;
+        left: 0rem;
+        background-color: #f5b0c5;
+        border-top:1px solid #f5b0c5;
+    }
+    .content-bottom {
+        z-index: 9999;
+        width: 100%;
+        margin-top:0rem;
+        position: relative;
+        background: url(~assets/images/result_bg2_03.png) no-repeat;
+        background-size: 100%;
+        padding-bottom: 5.4rem;
+        img {
+            width: 95%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

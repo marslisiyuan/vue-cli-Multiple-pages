@@ -1,0 +1,73 @@
+.container {
+    overflow:hidden;
+    .content-top {
+        width: 100%;
+        background: url(~assets/images/buyBg_top.jpg) no-repeat;
+        background-size: 100%;
+        padding-top: 1.3rem;
+        position: relative;
+        top: 0;
+        left: 0;
+        img {
+            width: 95%;
+            display: block;
+            margin: 0 auto;
+        }
+        .username {
+            color: #fff;
+            text-align:center;
+            margin-top:-1.2rem;
+            font-size: .45rem;
+          @media screen and (min-width: 640px) {
+            margin-top:-1.4rem;
+          }
+        }
+    }
+    .content-middle {
+        background: url(~assets/images/buyBg_middle.jpg) no-repeat;
+        background-size: 100% 100%;
+        .content-case {
+            width: 95%;
+            margin: 0 auto;
+            background: url(~assets/images/content_middle.png);
+            background-size: contain;
+            .result-conent {
+                padding: 1rem 5% 0 6%;
+                .result-item {
+                    padding-bottom: 1.5rem;
+                    .result-title {
+                        color: #00d0e1;
+                        font-size: .55rem;
+                        margin-bottom: .4rem;
+                    }
+                    .result-text {
+                        color: #fff;
+                        font-size: .44rem;
+                        line-height: .8rem;
+                        font-family: 'KaiTi';
+                        @media screen and (min-width: 640px) {
+                            font-size: .55rem;
+                            line-height: 1rem;
+                        }
+                    }
+                }
+            }
+          .extra{
+            color:#fff;
+            text-align:center;
+            line-height:.5rem;
+          }
+        }
+    }
+    .content-bottom {
+        width: 100%;
+        background: url(~assets/images/buyBg_bottom.jpg) no-repeat;
+        background-size: 100%;
+        padding-bottom: 6.4rem;
+        img {
+            width: 95%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+.container {
+    background: url(~assets/images/second_bg2.jpg) no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    .specialFont {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 100%;
+        img {
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .effect-wrap {
+        width: 100%;
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 10%;
+        bottom: 0;
+        .ball {
+            width: 100%;
+            margin-left: 1%;
+        }
+        .effect {
+            width: 70%;
+            margin: 0 auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 2rem;
+            bottom: 0;
+            animation: myfirst 2s infinite linear;
+        }
+        @keyframes myfirst {
+            0% {
+                top: 2rem;
+            }
+            50% {
+                top: 1.7rem;
+            }
+            100% {
+                top: 2rem;
+            }
+        }
+        .light {
+            width: 60%;
+            position: absolute;
+            left: 21%;
+            right: 0;
+            top: 30%;
+            bottom: 0;
+        }
+    }
+    .progress-wrap {
+        width: 90%;
+        margin: 0 auto;
+        background: url(../../../../assets/images/progress_case2.png) no-repeat;
+        background-size: 100%;
+        position: relative;
+        bottom: 0;
+        left: 0;
+        height: 1.5rem;
+        .progress {
+            height: .82rem;
+            position: absolute;
+            left: 5%;
+            top: .3rem;
+            @media screen and (min-width: 640px) {
+                top:.4rem;
+                height: .9rem;
+                left: 5.5%;
+            }
+        }
+        .percent {
+            position: absolute;
+            left: 40%;
+            top: .2rem;
+            right: 0;
+            bottom: 0;
+            height: 1.0rem;
+            @media screen and (min-width: 640px) {
+                top:.4rem
+            }
+        }
+    }
+}

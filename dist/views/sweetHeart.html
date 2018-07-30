@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!--<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">-->
+  <meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <title>玄星网</title>
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+  <!--<script src="https://cdn.bootcss.com/babel-polyfill/6.23.0/polyfill.min.js"></script>-->
+  <script src="https://s13.cnzz.com/z_stat.php?id=1273314309&web_id=1273314309" language="JavaScript"></script>
+  <input type="hidden" id="appId" value="<%=signData.appId%>"/>
+  <input type="hidden" id="sign" value="<%=signData.sign%>"/>
+  <input type="hidden" id="timeStamp" value="<%=signData.timeStamp%>"/>
+  <style>
+    a{
+      display:none;
+    }
+  </style>
+<link href="/static/css/views/sweetHeart.css?a8c7e265b37d42f5a95d" rel="stylesheet"></head>
+
+<body>
+<div id="app">
+  <keep-alive>
+    <router-view v-if="$route.meta.keepAlive"></router-view>
+  </keep-alive>
+  <router-view v-if="!$route.meta.keepAlive"></router-view>
+</div>
+<script type="text/javascript" src="/static/js/vendor.js?a8c7e265b37d42f5a95d"></script><script type="text/javascript" src="/static/js/views/sweetHeart.js?a8c7e265b37d42f5a95d"></script></body>
+<style>
+  #app {
+    font-family: 'PingFangSC-Regular', '黑体', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333;
+  }
+</style>
+</html>
